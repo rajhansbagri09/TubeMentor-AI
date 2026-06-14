@@ -216,7 +216,7 @@ if st.session_state["retriever"]:
 
 
 query = st.chat_input(
-    "Ask about the video..."
+    "Ask about the video. Type 'exit' to stop."
 )
 
 if query:
