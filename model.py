@@ -215,9 +215,8 @@ if st.session_state["retriever"]:
 
 
 
-query = st.chat_input(
-    "Ask about the video..."
-)
+# Chat input
+query = st.chat_input("Ask about the video. Type 'exit' to stop.")
 
 if query:
 
@@ -253,14 +252,16 @@ if query:
             AIMessage(content=answer)
         )
 
-st.markdown("---")
+
+# ---------------- Footer ----------------
+
+
 
 st.markdown(
     """
-    <div style='text-align:center; color:gray;'>
-        <h4>🎬 TubeMentor AI</h4>
-        <p>Built with ❤️ by Rajhans Bagri</p>
-        <p>© 2026 All Rights Reserved</p>
+    <div style="text-align:center; color:#9CA3AF; font-size:14px;">
+        Built with ❤️ by <b>Rajhans Bagri</b><br>
+        © 2026 All Rights Reserved
     </div>
     """,
     unsafe_allow_html=True
